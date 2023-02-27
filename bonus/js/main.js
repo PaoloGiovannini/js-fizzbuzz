@@ -3,7 +3,7 @@ const containerDom = document.querySelector('.container');
 for (let i = 1; i <= 100; i++ ) {
     const quadratino = document.createElement('div');
     quadratino.classList.add('square');
-    
+    containerDom.append(quadratino);
     
     if (i % 3 == 0 && i % 5 == 0){
         quadratino.append("fizzbuzz");
@@ -19,6 +19,6 @@ for (let i = 1; i <= 100; i++ ) {
         quadratino.classList.add('green');
     }
     
-    containerDom.append(quadratino);
+    
 }
 
